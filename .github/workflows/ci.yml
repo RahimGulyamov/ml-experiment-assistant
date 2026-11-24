@@ -13,4 +13,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - run: npx --yes @fission-ai/openspec@2.1.1 validate --specs --strict --no-interactive
+        env:
+          OPENSPEC_TELEMETRY: '0'
       - run: npm run build

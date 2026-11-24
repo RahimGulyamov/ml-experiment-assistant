@@ -86,6 +86,8 @@ npm run dev
 
 ```sh
 npm run check       # строгий TypeScript и тесты
+# Проверка структуры OpenSpec отдельно (также выполняется в CI):
+npx --yes @fission-ai/openspec@2.1.1 validate --specs --strict --no-interactive
 npm run build       # самостоятельный HTML и production bundle
 npm start           # локально запустить production Worker
 npm run mcp:smoke -- http://127.0.0.1:5173/api/mcp
