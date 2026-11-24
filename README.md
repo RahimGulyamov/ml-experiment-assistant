@@ -55,7 +55,7 @@ TypeScript, React 19, Vinext/Vite, официальный MCP TypeScript SDK, Zo
 не требуется временное глобальное хранилище или публичная сессия. Это осознанный
 компромисс MVP, а не отдельный сетевой микросервис.
 
-Публичный `/mcp` использует тот же обработчик с учебным набором. Внешний MCP-клиент
+На Sites путь `/mcp` зарезервирован платформой. Публичный `/api/mcp` использует тот же обработчик с учебным набором. Внешний MCP-клиент
 не видит загрузок пользователей. Транспорт stateless, JSON responses, без SSE-сессий.
 
 | Инструмент | Аргументы | Результат |
@@ -86,7 +86,7 @@ npm run dev
 npm run check       # строгий TypeScript и тесты
 npm run build       # самостоятельный HTML и production bundle
 npm start           # локально запустить production Worker
-npm run mcp:smoke -- http://127.0.0.1:5173/mcp
+npm run mcp:smoke -- http://127.0.0.1:5173/api/mcp
 ```
 
 Пример подключения внешнего MCP-клиента:
@@ -95,7 +95,7 @@ npm run mcp:smoke -- http://127.0.0.1:5173/mcp
 {
   "mcpServers": {
     "run-notes": {
-      "url": "https://run-notes-rahim.resourcefulbottle4.chatgpt.site/mcp"
+      "url": "https://run-notes-rahim.resourcefulbottle4.chatgpt.site/api/mcp"
     }
   }
 }

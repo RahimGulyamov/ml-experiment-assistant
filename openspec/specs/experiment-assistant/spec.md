@@ -28,7 +28,7 @@ SHALL возвращаться как null, а не Infinity. Все числа 
 
 ### Requirement: Real MCP
 Система SHALL использовать официальный MCP SDK и выполнять initialize,
-tools/list, tools/call. `/mcp` SHALL предоставлять Streamable HTTP для учебного
+tools/list, tools/call. `/api/mcp` SHALL предоставлять Streamable HTTP для учебного
 набора. Агент SHALL вызывать инструменты через MCP client, не напрямую.
 Загруженный набор SHALL быть изолирован в контексте одного запроса.
 

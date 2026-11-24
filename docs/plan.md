@@ -37,7 +37,7 @@ MVP: веб-интерфейс → агент LLM → MCP → проверенн
 4. Сравнивать только одну группу experiment/dataset/split. Направление метрики
    пользователь задаёт явно. Показывать абсолютную и относительную разницу.
 5. Сделать MCP-инструменты list_runs, compare_runs, inspect_run, diagnose_run.
-6. Предоставить Streamable HTTP `/mcp` с демонстрационными данными. Внутри
+6. Предоставить Streamable HTTP `/api/mcp` с демонстрационными данными. Внутри
    запроса агента использовать такой же HTTP transport через request-local fetch,
    привязанный к загруженному набору. Не смешивать данные разных пользователей.
 7. Реализовать OpenAI-compatible Chat Completions tool calling, лимиты шагов,

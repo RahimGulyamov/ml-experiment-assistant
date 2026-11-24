@@ -1,6 +1,6 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
-const url = new URL(process.argv[2] || "http://localhost:5173/mcp");
+const url = new URL(process.argv[2] || "http://localhost:5173/api/mcp");
 const client = new Client({ name: "run-notes-smoke", version: "1.0.0" });
 try {
   await client.connect(new StreamableHTTPClientTransport(url));

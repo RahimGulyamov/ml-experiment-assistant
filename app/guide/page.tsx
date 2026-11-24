@@ -105,7 +105,7 @@ export default function Guide() {
       </p>
       <h2>Для внешнего MCP-клиента</h2>
       <p>
-        Endpoint <code>/mcp</code> поддерживает Streamable HTTP и четыре
+        Endpoint <code>/api/mcp</code> поддерживает Streamable HTTP и четыре
         read-only инструмента: list_runs, compare_runs, inspect_run,
         diagnose_run. Внешний endpoint работает только с публичным учебным
         набором. Загруженные пользователем данные доступны только клиенту внутри
