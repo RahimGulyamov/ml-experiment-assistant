@@ -1,0 +1,6 @@
+schema: spec-driven
+context: |
+  Run Notes, course personal project by Rahim Gulyamov.
+  TypeScript, React/Vinext, MCP SDK, OpenAI-compatible LLM.
+  Canonical requirements: openspec/specs/experiment-assistant/spec.md.
+  Honest calculation-only mode; no persisted API keys or user data on server.

@@ -1,0 +1,2 @@
+# Only for reproducing the optional measured Iris example; the web app needs Node.
+numpy==1.26.4

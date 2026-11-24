@@ -1,0 +1,621 @@
+[
+  {
+    "id": "run-001",
+    "name": "Baseline · ResNet-18",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 420,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.001,
+      "weight_decay": 0,
+      "batch_size": 32,
+      "seed": 42,
+      "augmentation": "none",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.873,
+      "val_loss": 0.431,
+      "f1_macro": 0.867
+    },
+    "history": [
+      {
+        "step": 2,
+        "train_loss": 1.12,
+        "val_loss": 1.225
+      },
+      {
+        "step": 4,
+        "train_loss": 0.832,
+        "val_loss": 0.935
+      },
+      {
+        "step": 6,
+        "train_loss": 0.621,
+        "val_loss": 0.75
+      },
+      {
+        "step": 8,
+        "train_loss": 0.466,
+        "val_loss": 0.632
+      },
+      {
+        "step": 10,
+        "train_loss": 0.353,
+        "val_loss": 0.557
+      },
+      {
+        "step": 12,
+        "train_loss": 0.269,
+        "val_loss": 0.509
+      },
+      {
+        "step": 14,
+        "train_loss": 0.208,
+        "val_loss": 0.479
+      },
+      {
+        "step": 16,
+        "train_loss": 0.163,
+        "val_loss": 0.459
+      },
+      {
+        "step": 18,
+        "train_loss": 0.13,
+        "val_loss": 0.447
+      },
+      {
+        "step": 20,
+        "train_loss": 0.106,
+        "val_loss": 0.439
+      },
+      {
+        "step": 22,
+        "train_loss": 0.089,
+        "val_loss": 0.434
+      },
+      {
+        "step": 24,
+        "train_loss": 0.076,
+        "val_loss": 0.431
+      }
+    ]
+  },
+  {
+    "id": "run-002",
+    "name": "Меньше learning rate",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 438,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.0003,
+      "weight_decay": 0,
+      "batch_size": 32,
+      "seed": 42,
+      "augmentation": "none",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.891,
+      "val_loss": 0.364,
+      "f1_macro": 0.885
+    },
+    "history": [
+      {
+        "step": 2,
+        "train_loss": 1.12,
+        "val_loss": 1.158
+      },
+      {
+        "step": 4,
+        "train_loss": 0.832,
+        "val_loss": 0.868
+      },
+      {
+        "step": 6,
+        "train_loss": 0.621,
+        "val_loss": 0.683
+      },
+      {
+        "step": 8,
+        "train_loss": 0.466,
+        "val_loss": 0.565
+      },
+      {
+        "step": 10,
+        "train_loss": 0.353,
+        "val_loss": 0.49
+      },
+      {
+        "step": 12,
+        "train_loss": 0.269,
+        "val_loss": 0.442
+      },
+      {
+        "step": 14,
+        "train_loss": 0.208,
+        "val_loss": 0.412
+      },
+      {
+        "step": 16,
+        "train_loss": 0.163,
+        "val_loss": 0.392
+      },
+      {
+        "step": 18,
+        "train_loss": 0.13,
+        "val_loss": 0.38
+      },
+      {
+        "step": 20,
+        "train_loss": 0.106,
+        "val_loss": 0.372
+      },
+      {
+        "step": 22,
+        "train_loss": 0.089,
+        "val_loss": 0.367
+      },
+      {
+        "step": 24,
+        "train_loss": 0.076,
+        "val_loss": 0.364
+      }
+    ]
+  },
+  {
+    "id": "run-003",
+    "name": "Weight decay",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 452,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "batch_size": 32,
+      "seed": 42,
+      "augmentation": "none",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.918,
+      "val_loss": 0.286,
+      "f1_macro": 0.912
+    },
+    "history": [
+      {
+        "step": 2,
+        "train_loss": 1.12,
+        "val_loss": 1.08
+      },
+      {
+        "step": 4,
+        "train_loss": 0.832,
+        "val_loss": 0.79
+      },
+      {
+        "step": 6,
+        "train_loss": 0.621,
+        "val_loss": 0.605
+      },
+      {
+        "step": 8,
+        "train_loss": 0.466,
+        "val_loss": 0.487
+      },
+      {
+        "step": 10,
+        "train_loss": 0.353,
+        "val_loss": 0.412
+      },
+      {
+        "step": 12,
+        "train_loss": 0.269,
+        "val_loss": 0.364
+      },
+      {
+        "step": 14,
+        "train_loss": 0.208,
+        "val_loss": 0.334
+      },
+      {
+        "step": 16,
+        "train_loss": 0.163,
+        "val_loss": 0.314
+      },
+      {
+        "step": 18,
+        "train_loss": 0.13,
+        "val_loss": 0.302
+      },
+      {
+        "step": 20,
+        "train_loss": 0.106,
+        "val_loss": 0.294
+      },
+      {
+        "step": 22,
+        "train_loss": 0.089,
+        "val_loss": 0.289
+      },
+      {
+        "step": 24,
+        "train_loss": 0.076,
+        "val_loss": 0.286
+      }
+    ]
+  },
+  {
+    "id": "run-004",
+    "name": "Длинное обучение",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 910,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.0003,
+      "weight_decay": 0,
+      "batch_size": 32,
+      "seed": 42,
+      "augmentation": "none",
+      "epochs": 60
+    },
+    "metrics": {
+      "accuracy": 0.902,
+      "val_loss": 0.412,
+      "f1_macro": 0.896
+    },
+    "history": [
+      {
+        "step": 5,
+        "train_loss": 1.12,
+        "val_loss": 0.95
+      },
+      {
+        "step": 10,
+        "train_loss": 0.832,
+        "val_loss": 0.651
+      },
+      {
+        "step": 15,
+        "train_loss": 0.621,
+        "val_loss": 0.47
+      },
+      {
+        "step": 20,
+        "train_loss": 0.466,
+        "val_loss": 0.36
+      },
+      {
+        "step": 25,
+        "train_loss": 0.353,
+        "val_loss": 0.293
+      },
+      {
+        "step": 30,
+        "train_loss": 0.269,
+        "val_loss": 0.283
+      },
+      {
+        "step": 35,
+        "train_loss": 0.208,
+        "val_loss": 0.29
+      },
+      {
+        "step": 40,
+        "train_loss": 0.163,
+        "val_loss": 0.306
+      },
+      {
+        "step": 45,
+        "train_loss": 0.13,
+        "val_loss": 0.328
+      },
+      {
+        "step": 50,
+        "train_loss": 0.106,
+        "val_loss": 0.353
+      },
+      {
+        "step": 55,
+        "train_loss": 0.089,
+        "val_loss": 0.381
+      },
+      {
+        "step": 60,
+        "train_loss": 0.076,
+        "val_loss": 0.41
+      }
+    ]
+  },
+  {
+    "id": "run-005",
+    "name": "Аугментации",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 580,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "batch_size": 32,
+      "seed": 42,
+      "augmentation": "random_crop+flip",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.927,
+      "val_loss": 0.258,
+      "f1_macro": 0.921
+    },
+    "history": [
+      {
+        "step": 2,
+        "train_loss": 1.12,
+        "val_loss": 1.052
+      },
+      {
+        "step": 4,
+        "train_loss": 0.832,
+        "val_loss": 0.762
+      },
+      {
+        "step": 6,
+        "train_loss": 0.621,
+        "val_loss": 0.577
+      },
+      {
+        "step": 8,
+        "train_loss": 0.466,
+        "val_loss": 0.459
+      },
+      {
+        "step": 10,
+        "train_loss": 0.353,
+        "val_loss": 0.384
+      },
+      {
+        "step": 12,
+        "train_loss": 0.269,
+        "val_loss": 0.336
+      },
+      {
+        "step": 14,
+        "train_loss": 0.208,
+        "val_loss": 0.306
+      },
+      {
+        "step": 16,
+        "train_loss": 0.163,
+        "val_loss": 0.286
+      },
+      {
+        "step": 18,
+        "train_loss": 0.13,
+        "val_loss": 0.274
+      },
+      {
+        "step": 20,
+        "train_loss": 0.106,
+        "val_loss": 0.266
+      },
+      {
+        "step": 22,
+        "train_loss": 0.089,
+        "val_loss": 0.261
+      },
+      {
+        "step": 24,
+        "train_loss": 0.076,
+        "val_loss": 0.258
+      }
+    ]
+  },
+  {
+    "id": "run-006",
+    "name": "Большой batch",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 310,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "batch_size": 128,
+      "seed": 42,
+      "augmentation": "none",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.912,
+      "val_loss": 0.301,
+      "f1_macro": 0.906
+    },
+    "history": [
+      {
+        "step": 2,
+        "train_loss": 1.12,
+        "val_loss": 1.095
+      },
+      {
+        "step": 4,
+        "train_loss": 0.832,
+        "val_loss": 0.805
+      },
+      {
+        "step": 6,
+        "train_loss": 0.621,
+        "val_loss": 0.62
+      },
+      {
+        "step": 8,
+        "train_loss": 0.466,
+        "val_loss": 0.502
+      },
+      {
+        "step": 10,
+        "train_loss": 0.353,
+        "val_loss": 0.427
+      },
+      {
+        "step": 12,
+        "train_loss": 0.269,
+        "val_loss": 0.379
+      },
+      {
+        "step": 14,
+        "train_loss": 0.208,
+        "val_loss": 0.349
+      },
+      {
+        "step": 16,
+        "train_loss": 0.163,
+        "val_loss": 0.329
+      },
+      {
+        "step": 18,
+        "train_loss": 0.13,
+        "val_loss": 0.317
+      },
+      {
+        "step": 20,
+        "train_loss": 0.106,
+        "val_loss": 0.309
+      },
+      {
+        "step": 22,
+        "train_loss": 0.089,
+        "val_loss": 0.304
+      },
+      {
+        "step": 24,
+        "train_loss": 0.076,
+        "val_loss": 0.301
+      }
+    ]
+  },
+  {
+    "id": "run-007",
+    "name": "Высокий learning rate",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "failed",
+    "duration_seconds": 92,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.1,
+      "weight_decay": 0,
+      "batch_size": 32,
+      "seed": 42,
+      "augmentation": "none",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.612,
+      "val_loss": 0.941,
+      "f1_macro": 0.606
+    },
+    "history": []
+  },
+  {
+    "id": "run-008",
+    "name": "Контрольный seed",
+    "experiment": "cifar10-resnet18",
+    "dataset": "CIFAR-10",
+    "split": "validation-v1",
+    "status": "finished",
+    "duration_seconds": 576,
+    "params": {
+      "architecture": "resnet18",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "batch_size": 32,
+      "seed": 43,
+      "augmentation": "random_crop+flip",
+      "epochs": 20
+    },
+    "metrics": {
+      "accuracy": 0.924,
+      "val_loss": 0.263,
+      "f1_macro": 0.918
+    },
+    "history": [
+      {
+        "step": 2,
+        "train_loss": 1.12,
+        "val_loss": 1.057
+      },
+      {
+        "step": 4,
+        "train_loss": 0.832,
+        "val_loss": 0.767
+      },
+      {
+        "step": 6,
+        "train_loss": 0.621,
+        "val_loss": 0.582
+      },
+      {
+        "step": 8,
+        "train_loss": 0.466,
+        "val_loss": 0.464
+      },
+      {
+        "step": 10,
+        "train_loss": 0.353,
+        "val_loss": 0.389
+      },
+      {
+        "step": 12,
+        "train_loss": 0.269,
+        "val_loss": 0.341
+      },
+      {
+        "step": 14,
+        "train_loss": 0.208,
+        "val_loss": 0.311
+      },
+      {
+        "step": 16,
+        "train_loss": 0.163,
+        "val_loss": 0.291
+      },
+      {
+        "step": 18,
+        "train_loss": 0.13,
+        "val_loss": 0.279
+      },
+      {
+        "step": 20,
+        "train_loss": 0.106,
+        "val_loss": 0.271
+      },
+      {
+        "step": 22,
+        "train_loss": 0.089,
+        "val_loss": 0.266
+      },
+      {
+        "step": 24,
+        "train_loss": 0.076,
+        "val_loss": 0.263
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+id,name,experiment,dataset,split,status,duration_seconds,metric.accuracy,metric.val_loss,metric.f1_macro,param.learning_rate,param.weight_decay,param.seed
+"run-001","Baseline · ResNet-18","cifar10-resnet18","CIFAR-10","validation-v1","finished","420","0.873","0.431","0.867","0.001","0","42"
+"run-002","Меньше learning rate","cifar10-resnet18","CIFAR-10","validation-v1","finished","438","0.891","0.364","0.885","0.0003","0","42"
+"run-003","Weight decay","cifar10-resnet18","CIFAR-10","validation-v1","finished","452","0.918","0.286","0.912","0.0003","0.01","42"
+"run-004","Длинное обучение","cifar10-resnet18","CIFAR-10","validation-v1","finished","910","0.902","0.412","0.896","0.0003","0","42"
+"run-005","Аугментации","cifar10-resnet18","CIFAR-10","validation-v1","finished","580","0.927","0.258","0.921","0.0003","0.01","42"
+"run-006","Большой batch","cifar10-resnet18","CIFAR-10","validation-v1","finished","310","0.912","0.301","0.906","0.0003","0.01","42"
+"run-007","Высокий learning rate","cifar10-resnet18","CIFAR-10","validation-v1","failed","92","0.612","0.941","0.606","0.1","0","42"
+"run-008","Контрольный seed","cifar10-resnet18","CIFAR-10","validation-v1","finished","576","0.924","0.263","0.918","0.0003","0.01","43"
