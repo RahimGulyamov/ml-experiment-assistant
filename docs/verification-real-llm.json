@@ -1,0 +1,37 @@
+{
+  "tested_at": "2026-11-24T17:48:27.037Z",
+  "route": "Local Codex CLI with existing ChatGPT authentication and real stdio MCP",
+  "fixtures": "synthetic public demo only",
+  "launcher_ui_verified": false,
+  "web_llm_api_verified": false,
+  "passed": true,
+  "calls": [
+    {
+      "tool": "list_workspace_sources",
+      "server": "run_notes",
+      "status": "completed"
+    },
+    {
+      "tool": "compare_training_exports",
+      "server": "run_notes",
+      "status": "completed"
+    },
+    {
+      "tool": "analyze_ab_result",
+      "server": "run_notes",
+      "status": "completed"
+    }
+  ],
+  "answer": {
+    "comparison_step": 200,
+    "quality_delta": 0.04,
+    "training_caveat": "Шаг 200 — последний, на котором обе метрики есть в обоих экспортах. Шаг 300 есть только у training-a. Если сопоставить его с шагом 200 у training-b, разница между запусками смешается с изменением метрик по ходу обучения.",
+    "ab_decision": "guardrail_violation",
+    "degraded_guardrails": [
+      "negative_feedback"
+    ],
+    "explanation": "На шаге 200 у training-b по сравнению с базовым training-a метрика val/quality выросла с 0,75 до 0,79, а val/loss снизилась с 0,50 до 0,44. В промежуточном отчёте ab-demo вовлечённость выросла на 2% (95%-й ДИ от +0,5% до +3,5%), но этого недостаточно: частота негативных откликов, для которой меньшее значение лучше, выросла на 20% (95%-й ДИ от +10% до +30%). Оба интервала описывают относительное изменение и целиком лежат выше нуля. Интервалы взяты из отчёта без пересчёта. В отчёте не указано, учитывались ли множественные сравнения."
+  },
+  "client_version": "Codex CLI 0.166.0-alpha.5.1",
+  "model": "CLI default; exact model ID not exposed in captured JSON events"
+}

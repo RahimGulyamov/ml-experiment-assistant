@@ -1,5 +1,6 @@
 import { handleMcp } from "@/lib/mcp/server";
 import { DEMO_RUNS } from "@/lib/experiments/demo";
+import { DEMO_WORKSPACE } from "@/lib/workspace/demo";
 import { apiHeaders, readBoundedJson, sameOrigin } from "@/lib/http";
 export async function POST(request: Request) {
   if (!sameOrigin(request))
@@ -15,6 +16,7 @@ export async function POST(request: Request) {
         body: JSON.stringify(data),
       }),
       DEMO_RUNS,
+      DEMO_WORKSPACE,
     );
     for (const [k, v] of Object.entries(apiHeaders)) response.headers.set(k, v);
     return response;

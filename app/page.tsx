@@ -312,6 +312,7 @@ export default function Home() {
         <nav aria-label="Основная навигация">
           <span className="nav-current">Эксперименты</span>
           <a href="/guide">Как работать</a>
+          <a href="/developer">Training и A/B</a>
           <a href="/presentation">
             О проекте <ArrowUpRight size={13} />
           </a>
@@ -815,6 +816,7 @@ export default function Home() {
           <span>Run Notes / личный проект · Гулямов Рахим</span>
           <div>
             <a href="/guide">Формат данных</a>
+            <a href="/developer">Training и A/B</a>
             <a href="/presentation">
               Презентация <ArrowUpRight size={12} />
             </a>
@@ -846,6 +848,19 @@ export default function Home() {
         <p>
           Нужна модель с поддержкой tool calling. Ключ хранится только в памяти
           вкладки и передаётся серверу на время запроса.
+        </p>
+        <p>
+          Ключ можно создать в{" "}
+          <a
+            href="https://platform.openai.com/api-keys"
+            target="_blank"
+            rel="noreferrer"
+          >
+            OpenAI Platform
+          </a>
+          . Подписка ChatGPT/Codex сама по себе не является API-ключом. Для
+          локального AI-клиента доступен{" "}
+          <a href="/developer">MCP без ключа сайта →</a>
         </p>
         <label>
           Провайдер

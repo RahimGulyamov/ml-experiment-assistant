@@ -14,7 +14,9 @@
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm test",
     "mcp:smoke": "node --import tsx scripts/mcp-smoke.ts",
-    "prebuild": "node scripts/generate-presentation.mjs"
+    "prebuild": "node scripts/generate-presentation.mjs",
+    "mcp:stdio": "node --import tsx scripts/mcp-stdio.ts",
+    "launcher:config": "node scripts/launcher-config.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

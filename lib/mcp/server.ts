@@ -3,8 +3,10 @@ import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/
 import { z } from "zod";
 import { compareRuns, diagnoseRun } from "../experiments/analytics";
 import { fieldName, identifier, type Run } from "../experiments/schema";
+import type { Workspace } from "../workspace/data";
+import { registerWorkspaceTools } from "../workspace/mcp";
 
-export function createExperimentServer(runs: Run[]) {
+export function createExperimentServer(runs: Run[], workspace?: Workspace) {
   const server = new McpServer({
     name: "run-notes-experiments",
     version: "1.0.0",
@@ -77,14 +79,16 @@ export function createExperimentServer(runs: Run[]) {
       return result(diagnoseRun(run));
     },
   );
+  if (workspace) registerWorkspaceTools(server, workspace);
   return server;
 }
 
 export async function handleMcp(
   request: Request,
   runs: Run[],
+  workspace?: Workspace,
 ): Promise<Response> {
-  const server = createExperimentServer(runs);
+  const server = createExperimentServer(runs, workspace);
   const transport = new WebStandardStreamableHTTPServerTransport({
     sessionIdGenerator: undefined,
     enableJsonResponse: true,

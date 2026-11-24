@@ -14,4 +14,4 @@ function render(){const s=slides[index];$('label').textContent=s.n+' / '+s.label
 $('prev').onclick=()=>{index=Math.max(0,index-1);render()};$('next').onclick=()=>{index=Math.min(slides.length-1,index+1);render()};$('notes').onclick=()=>{notes=!notes;render()};document.addEventListener('keydown',e=>{if(['ArrowRight','ArrowLeft',' '].includes(e.key)){e.preventDefault();index=Math.max(0,Math.min(slides.length-1,index+(e.key==='ArrowLeft'?-1:1)));render()}if(e.key.toLowerCase()==='n'){notes=!notes;render()}});render();
 </script></html>`;
 writeFileSync(new URL("../public/presentation.html", import.meta.url), html);
-console.log("Generated standalone presentation.html (8 slides)");
+console.log(`Generated standalone presentation.html (${slides.length} slides)`);
